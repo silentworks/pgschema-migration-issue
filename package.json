@@ -1,0 +1,12 @@
+{
+  "name": "pgschema-migration-issue",
+  "scripts": {
+    "s:start": "npx supabase start",
+    "s:start-shadow": "npx supabase start --workdir ./shadowdb",
+    "s:stop": "npx supabase stop",
+    "s:stop-shadow": "npx supabase stop --workdir ./shadowdb"
+  },
+  "dependencies": {
+    "supabase": "2.76.15"
+  }
+}
