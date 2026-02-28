@@ -8,12 +8,23 @@ This repository makes used of the Supabase CLI for local setup which requires do
 
 ### How to use
 
-Install dependencies
+Install dependencies:
 
 ```sh
 npm install
 ```
 
+Run normal local project:
+
+```
+npm run s:start
+```
+
+Run external plan database:
+
+```
+npm run s:start-shadow
+```
 
 Install any version of pgschema after 1.6.0 and run `pgschema dump > schema.sql` and then try to do `pgschema plan --file schema.sql`
 and you will get an error about the permission issue.
